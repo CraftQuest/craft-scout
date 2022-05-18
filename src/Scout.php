@@ -131,6 +131,7 @@ class Scout extends Plugin
 
     private function validateConfig()
     {
+        return;
         $indices = $this->getSettings()->getIndices();
 
         if ($indices->unique('indexName')->count() !== $indices->count()) {
